@@ -15,18 +15,15 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: dbyll
+      title: Grant Does Dev
 
-description: Stylish Jekyll Theme
+description: 
 author:
-  name: dbyll
-  email: dbyll@ismaildemirbilek.com
-  github: dbtek
-  twitter: dbtek
-  pinterest: asd123
-  linkedin: asd123
-  bio: Your stylish, minimalist theme!
-  email_md5: 726351295ec82e145928582f595aa3aa
+  name: Grant Vermillion
+  email: grant.w.vermillion@gmail.com
+  github: gvermillion
+  linkedin: gvermillion
+  bio: Just a human who loves leveraging technology to make the world a better place.
 
 rss_path: feed.xml
 categories_path: categories.html
