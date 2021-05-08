@@ -19,9 +19,9 @@ Briefly, Docker is a powerful tool that lets you create self-contained environme
 
  Consider what we are trying to do right now. I, on a machine running MacOS, am trying to help you, on a machine running an unknown OS, setup a local development environment with all necessary dependencies so you can use python to interact with Stellar. For this guide to be truly useful, I could do one of the following:
  
-1. Write versions of the instructions for all possible operating systems, including those yet to be invented---a daunting task to put it mildly. 
+- Write versions of the instructions for all possible operating systems, including those yet to be invented---a daunting task to put it mildly. 
 
-1. Hand you a ready-to-go MacBook Pro with all of the dependencies installed, so you can immediately jump into developing. 
+- Hand you a ready-to-go MacBook Pro with all of the dependencies installed, so you can immediately jump into developing. 
 
 Both of these "solutions" are untenable for, what I hope are, obvious reasons."
 
@@ -47,7 +47,7 @@ I'll wait here!
 
 Just a few more steps to go:
 
-1 . To make things easier, I pre-built the image for you to pull down from [Docker hub](https://hub.docker.com/r/gvermillion/stellar_dev). To pull this image down, execute the following at command line:
+- To make things easier, I pre-built the image for you to pull down from [Docker hub](https://hub.docker.com/r/gvermillion/stellar_dev). To pull this image down, execute the following at command line:
 
 ```{sh}
 docker pull gvermillion/stellar_dev
@@ -61,16 +61,15 @@ This will initiate the image download, layer by layer, from Docker Hub. Download
 Status: Downloaded newer image for gvermillion/stellar_dev:latest
 docker.io/gvermillion/stellar_dev:latest
 ```
-
-2. Open the Docker Desktop client, and in the left bar, click on `Image`. You should see something like the following:
+- Open the Docker Desktop client, and in the left bar, click on `Image`. You should see something like the following:
 
 ![Docker Desktop: Image Tab](/assets/resources/docker_desktop_01.png)
 
-3. Hover over the `gvermillion/stellar_dev` image and click on `Run`:
+- Hover over the `gvermillion/stellar_dev` image and click on `Run`:
 
 ![Docker Desktop: Run Container](/assets/resources/docker_desktop_02.png)
 
-4. Expand the `Optional Settings` tab, add the following settings, and click `Run`:
+- Expand the `Optional Settings` tab, add the following settings, and click `Run`:
 
 ![Docker Desktop: Optional Settings](/assets/resources/docker_desktop_03.png)
 
@@ -78,15 +77,15 @@ docker.io/gvermillion/stellar_dev:latest
 >
 > Be sure to choose paths that make sense for your machine, but the **container path must start with** `/home/jovyan/`
 
-5. In the left bar, click on `Container/Apps`.
+- In the left bar, click on `Container/Apps`.
 
-![Docker Desktop: Containers]((/assets/resources/docker_desktop_04.png)
+![Docker Desktop: Containers](/assets/resources/docker_desktop_03.png)
 
-6. Click on the `stellar` container to see the active logs. You need to copy the security token printed in the logs to be able to access the dev environment from your browser. It's printed in a few places; one is highlighted below:
+- Click on the `stellar` container to see the active logs. You need to copy the security token printed in the logs to be able to access the dev environment from your browser. It's printed in a few places; one is highlighted below:
 
 ![Docker Desktop: Token](/assets/resources/docker_desktop_05.png)
 
-7. With the token copied, point your browser to [https://localhost:7117/lab](https://localhost:7117/lab) and paste the token when prompted. Voila! You know have a web-based dev environment (specifically an instance of Jupyter Lab.)
+- With the token copied, point your browser to [https://localhost:7117/lab](https://localhost:7117/lab) and paste the token when prompted. Voila! You know have a web-based dev environment (specifically an instance of Jupyter Lab.)
 
 ![Jupyter Lab: Landing](/assets/resources/jupyter_lab_01.png)
 
@@ -96,18 +95,18 @@ I could write ad nauseam about Jupyter Lab, but suffice it to say that it is an 
 
 The goal of this article, though, is to get you access to a Python environment with the `stellar-sdk` dependency, so we will skip a guided tour of Jupyter Lab. (BUT, I encourage you to play around inside Jupyter Lab and discover more features for yourself.)
 
-1. Under `Console`, click on `Python 3`, which will open up an interactive Python console.
+- Under `Console`, click on `Python 3`, which will open up an interactive Python console.
 
 ![Jupyter Lab: Console](/assets/resources/jupyter_lab_02.png)
 
-2. In the text bar at the bottom of the console, type the following (`Enter/Return` will give you a link break): 
+- In the text bar at the bottom of the console, type the following (`Enter/Return` will give you a link break): 
 
 ```{python}
 import stellar_sdk
 stellar_sdk.__version__
 ```
 
-3. Hit `Shift+Enter/Return` to submit the code. You should see `3.3.1` returned:
+- Hit `Shift+Enter/Return` to submit the code. You should see `3.3.1` returned:
 
 ![Jupyter Lab: Console 2](/assets/resources/jupyter_lab_03.png)
 
