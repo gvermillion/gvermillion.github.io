@@ -64,7 +64,7 @@ docker.io/gvermillion/stellar_dev:latest
 
 2. Open the Docker Desktop client, and in the left bar, click on `Image`. You should see something like the following:
 
-![Docker Desktop: Image Tab](/assets/resources/docker_desktop_01.png)
+![Docker Desktop: Image Tab]({{site.BASE_PATH}}/assets/resources/docker_desktop_01.png)
 
 3. Hover over the `gvermillion/stellar_dev` image and click on `Run`:
 
