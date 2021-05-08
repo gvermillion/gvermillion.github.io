@@ -79,7 +79,7 @@ docker.io/gvermillion/stellar_dev:latest
 
 - In the left bar, click on `Container/Apps`.
 
-![Docker Desktop: Containers](/assets/resources/docker_desktop_03.png)
+![Docker Desktop: Containers](/assets/resources/docker_desktop_04.png)
 
 - Click on the `stellar` container to see the active logs. You need to copy the security token printed in the logs to be able to access the dev environment from your browser. It's printed in a few places; one is highlighted below:
 
