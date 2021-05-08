@@ -9,6 +9,7 @@ markdown: kramdown
 #google_analytics: dbyll
 title: Grant Does Dev
 include: [".well-known"]
+future: true
 
 defaults:
   -
