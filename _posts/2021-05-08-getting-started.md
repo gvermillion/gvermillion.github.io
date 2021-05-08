@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Getting Started with Python and Stellar"
+categories: [howto[]
+tags: [stellar, jupyter, docker]
 ---
 
 # Outline
