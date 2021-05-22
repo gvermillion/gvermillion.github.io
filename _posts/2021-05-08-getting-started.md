@@ -85,7 +85,7 @@ docker.io/gvermillion/stellar_dev:latest
 
 ![Docker Desktop: Token](/assets/resources/docker_desktop_05.png)
 
-- With the token copied, point your browser to [https://localhost:7117/lab](https://localhost:7117/lab) and paste the token when prompted. Voila! You know have a web-based dev environment (specifically an instance of Jupyter Lab.)
+- With the token copied, point your browser to [http://localhost:7117/lab](http://localhost:7117/lab) and paste the token when prompted. Voila! You know have a web-based dev environment (specifically an instance of Jupyter Lab.)
 
 ![Jupyter Lab: Landing](/assets/resources/jupyter_lab_01.png)
 
